@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  sangoisanga
+facebook_username: sangoisanga
 
 # Build settings
 theme: minima
@@ -32,8 +33,16 @@ plugins:
   - jekyll-feed
 
 
+header_pages:
+  - about.markdown
+
 # Common settings
 timezone: Asia/Ho_Chi_Minh
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
